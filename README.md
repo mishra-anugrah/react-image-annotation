@@ -1,4 +1,29 @@
+# Developed by Anugrah Mishra
+## Assignment for the position - **Frontend Engineer**
 
+---
+## Libraries used: 
+- Konva
+- react-konva
+- material-ui
+- uuid
+
+---
+
+## Features
+- by default, 5 images are loaded 
+- User can:
+    - navigate through the images
+    - view the current image number and total number of images
+    - draw annotations on images
+    - save annotations (associating annotations with images in the browser) by clicking on the `Save` button
+    - download the annotations in a JSON file by clicking on the `Submit` button
+    - Add new images to the application by -- Pasting URL of the image OR uploading image from the system
+- Files uploaded to the system will be validated for types
+- saved annotations will be retained while navigating through the images
+
+
+---
 
 
 # Getting Started with Create React App
