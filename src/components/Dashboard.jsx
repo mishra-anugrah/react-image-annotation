@@ -5,6 +5,7 @@ import { Annotation } from "./Annotation";
 import { Toolbar } from "./Toolbar";
 import { ImageContainer } from "./ImageContainer";
 import { assets } from "../assets";
+import { prepareJSONData } from "../utils/utils";
 
 export const Dashboard = () => {
   const [annotations, setAnnotations] = useState([]);
@@ -140,7 +141,7 @@ export const Dashboard = () => {
   const handleSubmit = () => {
     // download json file for
     const fileName = "annotations";
-    const json = JSON.stringify(allData, null, 2);
+    const json = JSON.stringify(prepareJSONData(allData), null, 2);
     const blob = new Blob([json], { type: "application/json" });
     const href = URL.createObjectURL(blob);
 

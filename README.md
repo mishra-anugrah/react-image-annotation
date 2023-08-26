@@ -17,7 +17,20 @@
     - view the current image number and total number of images
     - draw annotations on images
     - save annotations (associating annotations with images in the browser) by clicking on the `Save` button
-    - download the annotations in a JSON file by clicking on the `Submit` button
+    - download the annotations in a JSON file by clicking on the `Submit` button in the below format
+    ```json
+            {
+                "<IMAGE_ID>": [
+                    // array of all bounding boxes of the image
+                    {
+                        "x1": "<number>", // left coordinate of the box
+                        "y1": "<number>", // top coordinate of the box
+                        "x2": "<number>", // right coordinate of the box
+                        "y2": "<number>" // bottom coordinate of the box
+                    }
+                ]
+            }
+    ```
     - Add new images to the application by -- Pasting URL of the image OR uploading image from the system
 - Files uploaded to the system will be validated for types
 - saved annotations will be retained while navigating through the images
