@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: center;
+  width: 99vw;
+  background-color: black;
+  column-gap: 10px;
+  color: #fff;
+  user-select: none;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+
+  &__info {
+    font-weight: 700;
+    padding: 5px;
+    color: #fff;
+  }
+
+  .image-switcher {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  &__button {
+    cursor: pointer;
+    padding: 5px;
+    color: #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: #a5a5a5;
+    }
+  }
+
+  .disabled {
+    cursor:not-allowed;
+    color: #474747;
+  }
+}
+
+.image-container {
+  width: 95vw;
+  height: 90vh;
+  position: relative
+}
+
+.image-upload__dialog {
+  .MuiPaper-root {
+    width: 50%;
+    height: 60%;
+  }
+
+  .add-image-by-url {
+    .MuiFormControl-root {
+      width: 95%;
+    }
+  }
+
+  .add-image-switch {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+}
